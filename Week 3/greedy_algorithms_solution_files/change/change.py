@@ -11,5 +11,6 @@ def get_change(m):
     	m = rest
     return n
 
+
 m = int(input())
 print(get_change(m))
