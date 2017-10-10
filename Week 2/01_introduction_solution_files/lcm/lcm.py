@@ -13,6 +13,7 @@ def lcm_naive(a, b):
     #         return l
 
     # return a*b
+    
     return int(a*b//gcd_naive(a,b))
 
 
