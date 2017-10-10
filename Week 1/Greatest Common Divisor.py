@@ -4,5 +4,4 @@ def gcd(a,b):
 	else:
 		c = a % b
 		return gcd(b,c)
-
 print(gcd(357,234))
