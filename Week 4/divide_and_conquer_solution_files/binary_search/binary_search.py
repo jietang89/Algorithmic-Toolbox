@@ -8,7 +8,7 @@ def binary_search(a, x):
 
     def binary(a,left,right,x):
         if right < left: return -1
-        mid = int(math.floor((left+right)/2))
+        mid = int((left+right)/2)
         if x == a[mid]: return mid
         elif x < a[mid]: return binary(a,left,mid-1,x)
         else: return binary(a,mid+1,right,x)
