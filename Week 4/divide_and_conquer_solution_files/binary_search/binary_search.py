@@ -6,22 +6,22 @@ def binary_search(a, x):
     left, right = 0, len(a)-1
     # write your code here
 
-    # def binary(a,left,right,x):
-    #     if right < left: return -1
-    #     mid = int(math.floor((left+right)/2))
-    #     if x == a[mid]: return mid
-    #     elif x < a[mid]: return binary(a,left,mid-1,x)
-    #     else: return binary(a,mid+1,right,x)
-    # return binary(a,left,right,x)
+    def binary(a,left,right,x):
+        if right < left: return -1
+        mid = int(math.floor((left+right)/2))
+        if x == a[mid]: return mid
+        elif x < a[mid]: return binary(a,left,mid-1,x)
+        else: return binary(a,mid+1,right,x)
+    return binary(a,left,right,x)
 
-    if right < left: return -1
-    mid = mid = int(math.floor((left+right)/2))
-    if x == a[mid]: return mid
-    elif x < a[mid]: return binary_search(a[:mid],x)
-    else: 
-        check = binary_search(a[mid+1:],x)
-        if check != -1: return check+mid+1
-        return check
+    # if right < left: return -1
+    # mid = int((left+right)/2)
+    # if x == a[mid]: return mid
+    # elif x < a[mid]: return binary_search(a[:mid],x)
+    # else: 
+    #     check = binary_search(a[mid+1:],x)
+    #     if check != -1: return check+mid+1
+    #     return check
 
 def linear_search(a, x):
     for i in range(len(a)):
