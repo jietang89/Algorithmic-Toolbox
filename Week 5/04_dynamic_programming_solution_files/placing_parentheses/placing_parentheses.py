@@ -9,9 +9,13 @@ def evalt(a, b, op):
     else:
         assert False
 
+
 def get_maximum_value(dataset):
     #write your code here
-    return 0
+    num = list(map(int,dataset[::2]))
+    op = list(dataset[1::2])
+    return num,op
+
 
 
 if __name__ == "__main__":
